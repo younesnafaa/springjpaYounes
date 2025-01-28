@@ -1,7 +1,6 @@
 package ssii.entity;
 
 import jakarta.persistence.*;
-
 import lombok.*;
 
 @Entity
@@ -13,10 +12,9 @@ import lombok.*;
 public class Personne {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-génère l'ID
     private Integer matricule;
 
     @NonNull
-    private String nom;
-
+    private String nom; // Nom de la personne
 }
